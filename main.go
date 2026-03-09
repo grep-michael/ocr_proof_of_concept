@@ -213,7 +213,7 @@ func main() {
 	a := app.New()
 	w := a.NewWindow("Camera Test")
 
-	cam, err := NewCameraWidget(2)
+	cam, err := NewCameraWidget(0)
 	if err != nil {
 		log.Fatalf("failed to open camera: %v", err)
 	}
